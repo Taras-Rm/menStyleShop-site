@@ -405,6 +405,10 @@ hr {
   text-decoration: none;
   color: #FFFFFF;
   margin-top: 30px;
+  transition: .5s all;
+}
+.newCollection .newCollection-btn:hover {
+  background-color: #1F1F1F;
 }
 
 .collectionSection--img {
@@ -453,6 +457,10 @@ hr {
   text-decoration: none;
   color: #FFFFFF;
   margin-top: 61px;
+  transition: .5s all;
+}
+.oldCollection .oldCollection-btn:hover {
+  background-color: #1F1F1F;
 }
 
 .newGoodsSection {
@@ -561,6 +569,10 @@ hr {
   padding: 10px 20px;
   margin-bottom: 20px;
   margin-right: 20px;
+  transition: .5s all;
+}
+.aboutBox-category .aboutBox-category--items a:hover {
+  background-color: #1F1F1F;
 }
 
 .aboutBox-mailing {
@@ -593,8 +605,9 @@ hr {
   padding: 0;
   padding-left: 20px;
   width: 100%;
+  outline: 0;
 }
-.aboutBox-mailing .aboutBox-mailing--form button {
+.aboutBox-mailing .aboutBox-mailing--form .aboutBox-mailing--btn {
   height: 100%;
   margin: 0;
   border: none;
@@ -604,4 +617,31 @@ hr {
   font-size: 14px;
   line-height: 21px;
   color: #FFFFFF;
+  cursor: pointer;
+  transition: .5s all;
+}
+.aboutBox-mailing .aboutBox-mailing--form .aboutBox-mailing--btn:hover {
+  background-color: #1F1F1F;
+}
+
+footer .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+footer .footer-rights {
+  margin: 17px 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #D0D0D0;
+}
+footer .footer-maker {
+  margin: 17px 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #D0D0D0;
+  text-decoration: underline;
 }
