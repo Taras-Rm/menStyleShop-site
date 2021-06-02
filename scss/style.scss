@@ -1,6 +1,26 @@
 @import 'reset';
 @import 'slick';
 
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #FFFFFF;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #FFFFFF;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #FFFFFF;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #FFFFFF;
+}
+
 $mainFonColor: #000000;
 $mainLetterColor: #FFFFFF;
 
@@ -141,7 +161,7 @@ body {
 ////////////////// Section 1 ////////////////////
 
 .mainSection {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("../images/MainImg.png") no-repeat 0% 0%;
+    background: url("../images/MainImg.png") no-repeat 0% 0%;
 
     background-size: 100%;
     height: 645px;
@@ -226,6 +246,7 @@ hr {
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 50px;
+    color: #FFFFFF;
 
 
     .seasonNew-item--img {
@@ -254,7 +275,7 @@ hr {
 }
 
 .newCollection {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("../images/Img4.png") no-repeat 0% 0%;
+    background: url("../images/Img4.png") no-repeat 0% 0%;
 
     background-size: 100%;
     height: 725px;
@@ -290,7 +311,7 @@ hr {
 }
 
 .collectionSection--img {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("../images/Img2.png") no-repeat 0% 0%;
+    background: url("../images/Img2.png") no-repeat 0% 0%;
 
     background-size: 100%;
     height: 600px;
@@ -344,5 +365,189 @@ hr {
         color: #FFFFFF;
 
         margin-top: 61px;
+    }
+}
+
+/////// Section 3 ////////////////
+
+.newGoodsSection {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+
+    h2 {
+        margin-top: 120px;
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+
+    .seasonNew-items {
+        margin-top: 81px;
+        margin-bottom: 110px;
+    }
+
+    .seasonNew-item--img {
+        text-align: center;
+    }
+
+    .seasonNew-item {
+        margin-bottom: 40px;
+    }
+}
+
+//////////// Section 4 ///////////////
+
+.brendsSection {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    background-color: #0F0F0F;
+
+    .wrapper {
+        padding-top: 60px;
+        padding-bottom: 80px;
+
+    }
+
+    h2 {
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+
+    hr {
+        margin-bottom: 40px;
+    }
+
+    .brendsSection-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+//////////// Section //////////////////
+
+.infoSection {
+    background: url("../images/Img3.png") no-repeat 0% 0%;
+
+    background-size: 100%;
+    height: 395px;
+}
+
+.infoBox {
+    padding-top: 80px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutBox-about {
+    max-width: 350px;
+
+    h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        margin-bottom: 40px;
+    }
+
+    .aboutBox-about--text {
+        color: #FFFFFF;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+    }
+}
+
+.aboutBox-category {
+    max-width: 350px;
+
+    h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        margin-bottom: 40px;
+    }
+
+    .aboutBox-category--items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+
+        a {
+            font-size: 14px;
+            line-height: 21px;
+            color: #D0D0D0;
+            text-decoration: none;
+            background-color: #0F0F0F;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+    }
+}
+
+.aboutBox-mailing {
+    max-width: 350px;
+
+    h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        margin-bottom: 40px;
+    }
+
+    .aboutBox-mailing--text {
+        color: #FFFFFF;
+        font-size: 14px;
+        line-height: 21px;
+
+        margin-bottom: 37px;
+    }
+
+    .aboutBox-mailing--form {
+        height: 42px;
+        display: flex;
+
+        input {
+            background-color: rgba(255, 255, 255, 0.4);
+            height: 100%;
+            border: none;
+            color: #FFFFFF;
+            padding: 0;
+            padding-left: 20px;
+            width: 100%;
+        }
+
+        button {
+            height: 100%;
+            margin: 0;
+            border: none;
+            padding: 10px 20px;
+            background-color: #0F0F0F;
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 21px;
+            color: #FFFFFF;
+
+        }
     }
 }

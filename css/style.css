@@ -155,6 +155,26 @@ select {
   vertical-align: middle;
 }
 
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #FFFFFF;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #FFFFFF;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #FFFFFF;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #FFFFFF;
+}
+
 body {
   font-family: 'PT Sans', sans-serif;
   background-color: #000000;
@@ -264,7 +284,7 @@ body {
 }
 
 .mainSection {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("../images/MainImg.png") no-repeat 0% 0%;
+  background: url("../images/MainImg.png") no-repeat 0% 0%;
   background-size: 100%;
   height: 645px;
   opacity: 0.95;
@@ -335,6 +355,7 @@ hr {
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 50px;
+  color: #FFFFFF;
 }
 .seasonNew-items .seasonNew-item--img {
   width: 260px;
@@ -356,7 +377,7 @@ hr {
 }
 
 .newCollection {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("../images/Img4.png") no-repeat 0% 0%;
+  background: url("../images/Img4.png") no-repeat 0% 0%;
   background-size: 100%;
   height: 725px;
   opacity: 0.95;
@@ -387,7 +408,7 @@ hr {
 }
 
 .collectionSection--img {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("../images/Img2.png") no-repeat 0% 0%;
+  background: url("../images/Img2.png") no-repeat 0% 0%;
   background-size: 100%;
   height: 600px;
   opacity: 0.95;
@@ -432,4 +453,155 @@ hr {
   text-decoration: none;
   color: #FFFFFF;
   margin-top: 61px;
+}
+
+.newGoodsSection {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+.newGoodsSection h2 {
+  margin-top: 120px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.newGoodsSection .seasonNew-items {
+  margin-top: 81px;
+  margin-bottom: 110px;
+}
+.newGoodsSection .seasonNew-item--img {
+  text-align: center;
+}
+.newGoodsSection .seasonNew-item {
+  margin-bottom: 40px;
+}
+
+.brendsSection {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  background-color: #0F0F0F;
+}
+.brendsSection .wrapper {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.brendsSection h2 {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.brendsSection hr {
+  margin-bottom: 40px;
+}
+.brendsSection .brendsSection-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoSection {
+  background: url("../images/Img3.png") no-repeat 0% 0%;
+  background-size: 100%;
+  height: 395px;
+}
+
+.infoBox {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutBox-about {
+  max-width: 350px;
+}
+.aboutBox-about h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.aboutBox-about .aboutBox-about--text {
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.aboutBox-category {
+  max-width: 350px;
+}
+.aboutBox-category h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.aboutBox-category .aboutBox-category--items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+.aboutBox-category .aboutBox-category--items a {
+  font-size: 14px;
+  line-height: 21px;
+  color: #D0D0D0;
+  text-decoration: none;
+  background-color: #0F0F0F;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.aboutBox-mailing {
+  max-width: 350px;
+}
+.aboutBox-mailing h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.aboutBox-mailing .aboutBox-mailing--text {
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 37px;
+}
+.aboutBox-mailing .aboutBox-mailing--form {
+  height: 42px;
+  display: flex;
+}
+.aboutBox-mailing .aboutBox-mailing--form input {
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 100%;
+  border: none;
+  color: #FFFFFF;
+  padding: 0;
+  padding-left: 20px;
+  width: 100%;
+}
+.aboutBox-mailing .aboutBox-mailing--form button {
+  height: 100%;
+  margin: 0;
+  border: none;
+  padding: 10px 20px;
+  background-color: #0F0F0F;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
 }
