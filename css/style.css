@@ -155,6 +155,43 @@ select {
   vertical-align: middle;
 }
 
+.seasonNew-slider .slick-track {
+  display: flex;
+}
+
+.seasonNew-slider .slick-list {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.seasonNew-slider {
+  position: relative;
+  padding-left: 90px;
+  padding-right: 45px;
+}
+
+.seasonNew-slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.seasonNew-slider .slick-dots li {
+  list-style: none;
+  margin: 0px 10px;
+}
+.seasonNew-slider .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-color: #fff;
+  border-radius: 50%;
+}
+.seasonNew-slider .slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
 ::-webkit-input-placeholder {
   /* WebKit browsers */
   color: #FFFFFF;
@@ -268,6 +305,10 @@ body {
 .secondHeader .secondHeader-menu--list a:hover {
   background-color: #1F1F1F;
 }
+.secondHeader .secondHeader-menu--btns {
+  display: flex;
+  align-items: center;
+}
 
 .secondHeader-menu {
   display: flex;
@@ -284,10 +325,13 @@ body {
 }
 
 .mainSection {
-  background: url("../images/MainImg.png") no-repeat 0% 0%;
-  background-size: 100%;
+  background-image: url("../images/MainImg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
   height: 645px;
-  opacity: 0.95;
   padding-top: 160px;
 }
 .mainSection .mainSection-header {
@@ -313,7 +357,7 @@ body {
   font-weight: 400;
 }
 .mainSection .mainSection-description {
-  width: 730px;
+  max-width: 730px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -377,11 +421,13 @@ hr {
 }
 
 .newCollection {
-  background: url("../images/Img4.png") no-repeat 0% 0%;
-  background-size: 100%;
   height: 725px;
-  opacity: 0.95;
   width: 46%;
+  background-image: url("../images/Img4.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
   text-align: center;
   font-family: 'Playfair Display', serif;
   text-transform: uppercase;
@@ -412,11 +458,13 @@ hr {
 }
 
 .collectionSection--img {
-  background: url("../images/Img2.png") no-repeat 0% 0%;
-  background-size: 100%;
   height: 600px;
-  opacity: 0.95;
   width: 46%;
+  background-image: url("../images/Img2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
 }
 
 .oldCollection {
@@ -439,7 +487,7 @@ hr {
 }
 .oldCollection .oldCollection-descrp {
   font-family: 'PT Sans', sans-serif;
-  width: 471px;
+  max-width: 471px;
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 400;
@@ -509,12 +557,16 @@ hr {
 }
 .brendsSection .brendsSection-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .infoSection {
-  background: url("../images/Img3.png") no-repeat 0% 0%;
-  background-size: 100%;
+  background-image: url("../images/Img3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
   height: 395px;
 }
 
@@ -522,6 +574,7 @@ hr {
   padding-top: 80px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .aboutBox-about {
@@ -644,4 +697,136 @@ footer .footer-maker {
   line-height: 15px;
   color: #D0D0D0;
   text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+  .infoSection {
+    height: auto;
+  }
+
+  .aboutBox-category {
+    margin-top: 40px;
+  }
+
+  .aboutBox-mailing {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .infoBox {
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+
+  .aboutBox-about,
+  .aboutBox-category,
+  .aboutBox-mailing {
+    max-width: none;
+  }
+}
+@media (max-width: 1000px) {
+  .mainSection {
+    padding-top: 120px;
+  }
+
+  .collectionSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .seasonNew {
+    height: 760px;
+  }
+
+  .seasonNew-slider {
+    width: 100%;
+  }
+
+  .newCollection {
+    width: 100%;
+  }
+
+  .collectionSection--img {
+    width: 100%;
+  }
+
+  .oldCollection {
+    height: auto;
+  }
+
+  .seasonNew-slider {
+    padding: 0;
+  }
+
+  .newGoodsSection h2 {
+    margin-top: 45px;
+  }
+}
+@media (max-width: 650px) {
+  .secondHeader .wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  .secondHeader-menu {
+    height: auto;
+  }
+
+  .aboutBox-mailing {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 525px) {
+  .firstHeader-schedule {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .firstHeader-schedule span {
+    border: none;
+    padding-top: 5px;
+  }
+  .firstHeader-schedule a {
+    border: none;
+    padding-top: 5px;
+  }
+
+  .secondHeader-logo {
+    margin-bottom: 15px;
+  }
+
+  .firstHeader .wrapper {
+    align-items: center;
+    height: 80px;
+  }
+
+  .firstHeader-login {
+    padding-right: 15px;
+  }
+
+  .secondHeader-menu {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .secondHeader .wrapper {
+    height: auto;
+  }
+
+  .secondHeader-menu--list {
+    margin-bottom: 15px;
+  }
+
+  .secondHeader-menu .secondHeader-cart {
+    margin: 0;
+  }
+
+  .mainSection {
+    padding-top: 100px;
+  }
 }

@@ -1,0 +1,43 @@
+.seasonNew-slider .slick-track {
+    display: flex;
+}
+
+
+.seasonNew-slider .slick-list {
+    min-width: 0;
+    overflow: hidden;
+}
+
+.seasonNew-slider {
+    position: relative;
+    padding-left: 90px;
+    padding-right: 45px;
+}
+
+.seasonNew-slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    li {
+        list-style: none;
+        margin: 0px 10px
+    }
+
+    button {
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        border-color: #fff;
+        border-radius: 50%;
+    }
+
+    li.slick-active button {
+
+        background-color: transparent;
+        border: 1px solid #fff;
+
+
+    }
+}
