@@ -429,6 +429,13 @@ hr {
 
     .seasonNew-item {
         margin-bottom: 40px;
+        cursor: pointer;
+
+        transition: .5s all;
+    }
+
+    .seasonNew-item:hover {
+        transform: scale(1.1);
     }
 }
 
